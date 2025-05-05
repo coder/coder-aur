@@ -24,20 +24,20 @@ main() {
 
   ls
   grep "pkgver=" PKGBUILD
-  CODE_SERVER_CURRENT_VERSION=$(grep "pkgver=" PKGBUILD | cut -d "=" -f2-)
-  echo "Current version: ${CODE_SERVER_CURRENT_VERSION}"
+  CODER_CURRENT_VERSION=$(grep "pkgver=" PKGBUILD | cut -d "=" -f2-)
+  echo "Current version: ${CODER_CURRENT_VERSION}"
 
-  CODE_SERVER_VERSION_TO_UPDATE=${1:-""}
+  CODER_VERSION_TO_UPDATE=${1:-""}
 
-  if [ "$CODE_SERVER_VERSION_TO_UPDATE" == "" ]; then
+  if [ "$CODER_VERSION_TO_UPDATE" == "" ]; then
     echo "Please call this script with the version to update to."
     echo "i.e. 4.5.2"
     exit 1
   fi
 
-  echo -e "Great! We'll update to $CODE_SERVER_VERSION_TO_UPDATE\n"
+  echo -e "Great! We'll update to $CODER_VERSION_TO_UPDATE\n"
 
-  sed -i "s/$CODE_SERVER_CURRENT_VERSION/$CODE_SERVER_VERSION_TO_UPDATE/" PKGBUILD
+  sed -i "s/$CODER_CURRENT_VERSION/$CODER_VERSION_TO_UPDATE/" PKGBUILD
 
   updpkgsums
 
@@ -46,9 +46,9 @@ main() {
   echo "All updated!"
   echo "Committing and pushing to GitHub"
   git add .
-  git commit -m "chore: updating version $CODE_SERVER_VERSION_TO_UPDATE"
+  git commit -m "chore: updating version $CODER_VERSION_TO_UPDATE"
   git push
-  echo "Action requried: make sure to push to aur: git push aur"
+  echo "Action required: make sure to push to aur: git push aur"
 }
 
 main "$@"

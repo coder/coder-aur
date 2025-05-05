@@ -1,18 +1,18 @@
-# code-server-aur
+# coder-aur
 
-Arch User Repository package for [code-server](https://github.com/cdr/code-server).
+Arch User Repository package for [coder](https://github.com/coder/coder).
 Feel free to file issues here or comment on the AUR page.
 
-Previously maintained by [KSXGitHub](https://github.com/KSXGitHub)
+Forked from [code-server-aur](https://github.com/coder/code-server-aur) which was previously maintained by [KSXGitHub](https://github.com/KSXGitHub)
 
 ## Updating
 
 Make sure you run these commands on an Arch machine. If you're a Coder employee, we suggest using your dogfooding environment.
 
-1. Run `sh update.sh` and type in the new version
+1. Run `./update.sh` and type in the new version
 1. Push changes to GitHub: `git push`
 1. Push changes to `aur`: `git push aur`
-	- If you don't have this set up, run `git remote add aur ssh://aur@aur.archlinux.org/code-server.git`
+	- If you don't have this set up, run `git remote add aur ssh://aur@aur.archlinux.org/coder-bin.git`
 	- Run `git push aur`
 
 ### SSH Key
@@ -41,8 +41,3 @@ If a new maintainer joins the project, please add them to the top of `PKGBUILD`.
 ### Removing Old Maintainers
 
 Instead of removing them completely, change their title from "Maintainer" to "Contributor".
-
-### Automated publishing
-
-@jsjoeio created an account under `cdrci` for automating publishing the AUR
-package. If you need these credentials, please ask him.
