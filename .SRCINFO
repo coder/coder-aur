@@ -1,6 +1,6 @@
 pkgbase = coder-bin
 	pkgdesc = Remote development environments on your infrastructure provisioned with Terraform
-	pkgver = 2.20.2
+	pkgver = 2.21.0
 	pkgrel = 2
 	url = https://coder.com
 	arch = x86_64
@@ -10,11 +10,11 @@ pkgbase = coder-bin
 	license = AGPL3
 	provides = coder
 	provides = coder-client
-	source_x86_64 = https://github.com/coder/coder/releases/download/v2.20.2/coder_2.20.2_linux_amd64.tar.gz
-	sha256sums_x86_64 = 414210b9a9541dbd18522d8973237566639fe143bac13deb039ded973aba58a2
-	source_aarch64 = https://github.com/coder/coder/releases/download/v2.20.2/coder_2.20.2_linux_arm64.tar.gz
-	sha256sums_aarch64 = 22b9d31a6bdc5f80bd72f7623db9a1c4b758145f8224eac7b3c77d21f8087f39
-	source_armv7h = https://github.com/coder/coder/releases/download/v2.20.2/coder_2.20.2_linux_armv7.tar.gz
-	sha256sums_armv7h = 2ceabbbe3d6be444366f8b292377be0f908010f04d9d1bb8bdd1f3d40d84e916
+	source_x86_64 = https://github.com/coder/coder/releases/download/v2.21.0/coder_2.21.0_linux_amd64.tar.gz
+	sha256sums_x86_64 = 092651d2f648f44c8ab8e5f3bb16364c4941ac563ae74711eeb776b2447fbf7b
+	source_aarch64 = https://github.com/coder/coder/releases/download/v2.21.0/coder_2.21.0_linux_arm64.tar.gz
+	sha256sums_aarch64 = 8e925a691515460d6dfcf0b8ce7ccd08a7d6779763a95db1e3ac625e04c4d026
+	source_armv7h = https://github.com/coder/coder/releases/download/v2.21.0/coder_2.21.0_linux_armv7.tar.gz
+	sha256sums_armv7h = 98cae0a3fd056eba7511c6897e2c7ce244b5d3dd1ab244dc196d5ba478d76b71
 
 pkgname = coder-bin
